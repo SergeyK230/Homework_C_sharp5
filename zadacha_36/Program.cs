@@ -2,7 +2,7 @@
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(-1000, 1000);
+        arr[i] = new Random().Next(-10, 10);
     }
 }
 
@@ -18,14 +18,14 @@ void Print (int[]arr)
 int SumNeChet (int[]arr)
 {
     int result = 0;
-    for (int i = 0; i < arr.Length; i+=2)
+    for (int i = 1; i < arr.Length; i+=2)
     {
         result = result + arr[i];
     }
     return result;
 }
 
-int[] array = new int[5];
+int[] array = new int[4];
 Random(array);
 Print(array);
 Console.WriteLine(SumNeChet(array));
